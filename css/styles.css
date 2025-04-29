@@ -1,0 +1,184 @@
+header {
+    background-color: #181F17;
+    padding: 10px;
+}
+.logo-img {
+    width: 200px;
+    height: auto;
+    padding-right: 10px;
+}
+.navPages {
+    color: #1AFF00;
+    font-family: "OCR A";
+}
+/* Glow effect for navigation tabs on hover */
+.navPages:hover,
+.navPages:focus {
+    color: #1AFF00;
+    box-shadow: 0 0 10px 2px #1AFF00, 0 0 20px 4px #1AFF0066;
+    transition: box-shadow 0.2s;
+    outline: none;
+}
+main {
+    background-color: #181F17;
+    padding: 10px;
+    border-top: 15px #1AFF00 double;
+    border-bottom: 15px #1AFF00 double;
+}
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+hr {
+    color: #1AFF00;
+}
+.heading {
+    color: #1AFF00;
+    font-family: "OCR A";
+    text-align: center;
+    padding-bottom: 40px;
+}
+.welcomeDescription {
+    color: #1AFF00;
+    font-family: "OCR A";
+    font-size: x-large;
+}
+.personal-life-columns {
+    display: flex;
+    align-items: flex-start; /* Aligns items at the top */
+    gap: 2rem; /* Space between image and text */
+}
+
+.personal-life-columns img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.personal-life-columns .welcomeDescription {
+    flex: 1; /* Take up remaining space */
+}
+.main-left {
+    padding-left: 25%;
+    padding-bottom: 20px;
+}
+.main-right {
+    padding-right: 15%;
+    padding-bottom: 20px;
+}
+.portfolioButton {
+    color: #1AFF00;
+    border-color: #1AFF00;
+    width: 240px;
+    height: 60px;
+    font-family: "OCR A";
+    font-size: 25px;
+}
+.portfolioButton:hover {
+    background-color: #1AFF00;
+    border-color: #1AFF00;
+    color: #181F17;
+}
+.showcase-img {
+    width: 270px;
+    border: 4px solid #1AFF00;
+    box-shadow:
+            0 0 20px 4px #1AFF00,
+            0 0 40px 8px #1AFF0066;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+.work-img {
+    width: 700px;
+    border: 4px solid #1AFF00;
+    box-shadow:
+            0 0 20px 4px #1AFF00,
+            0 0 40px 8px #1AFF0066;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+.hobbies-columns {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem; /* Adjust spacing as needed */
+    margin-bottom: 2rem;
+}
+
+.hobbies-columns .carousel {
+    max-width: 400px; /* Adjust as needed */
+    flex: 0 0 auto;
+}
+
+.hobbies-columns .welcomeDescription {
+    flex: 1 1 0;
+    margin: 0;
+}
+.skills-image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    justify-items: center;
+    align-items: center;
+}
+.skill-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fafbfc;
+    border-radius: 12px;
+    padding: 1rem 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+footer {
+    background-color: #181F17;
+    padding: 10px;
+}
+.logo-img-footer {
+    width: 400px;
+    height: auto;
+}
+.footer-socials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 16px;
+    justify-items: center;
+    align-items: center;
+    max-width: 300px; /* Optional: adjust as needed */
+    margin: 0 auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.footer-socials-grid .footer-socials img.socials {
+    width: 70px; /* Adjust icon size as needed */
+    height: 70px;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+.footer-socials-grid .footer-socials img.socials:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 2px #1AFF00, 0 0 20px 4px #1AFF0066;
+    transition: box-shadow 0.2s;
+    outline: none;
+}
+.copyright {
+    color: #1AFF00;
+    text-align: center;
+}
+
+
+@media (max-width: 600px) {
+    .logo-img-footer {
+        width: 180px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo-img {
+        width: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
